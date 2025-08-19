@@ -43,38 +43,40 @@
 
     .popup {
       background-color: #fff;
-      padding: 30px;
-      border-radius: 12px;
+      padding: 40px 30px;
+      border-radius: 10px;
       text-align: center;
-      width: 320px;
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+      width: 380px;
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
     }
 
     .popup img {
-      width: 60px;
-      height: 60px;
+      width: 100px;
+      height: 100px;
       border-radius: 50%;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
+      object-fit: cover;
     }
 
     .popup h2 {
-      font-size: 16px;
-      color: #333;
-      margin-bottom: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #000;
+      margin-bottom: 12px;
     }
 
     .popup p {
       font-size: 14px;
-      color: #555;
+      color: #444;
       margin-bottom: 20px;
     }
 
     .popup a.button {
-      display: inline-block;
-      background-color: #ff4d89;
+      display: inline-block; /* ajusta só ao tamanho do texto */
+      background-color: #ff007f;
       color: white;
-      padding: 10px 20px;
-      border-radius: 20px;
+      padding: 10px 22px; /* reduzi o padding */
+      border-radius: 25px;
       text-decoration: none;
       font-size: 14px;
       font-weight: bold;
@@ -82,7 +84,7 @@
     }
 
     .popup a.button:hover {
-      background-color: #e0437a;
+      background-color: #e00070;
     }
   </style>
 </head>
@@ -90,9 +92,9 @@
 
   <div class="popup">
     <img src="images/foto2.jpg" alt="perfil">
-    <h2>Algo deu errado</h2>
-    <p>Clique abaixo para receber seus conteudinhos 👇</p>
-    <a class="button" href="https://drive.google.com/drive/folders/1bAH355bm7dXw8t9QznComMUTMaVbQIvy?usp=drive_link" target="_blank" onclick="fbq('track', 'Purchase', {value: 5.00, currency: 'BRL'});">Acessar conteúdo</a>
+    <h2>Login realizado com sucesso!</h2>
+    <p>Clique no botão abaixo para acessar os conteúdos.</p>
+    <a class="button" href="https://privadinho-lucia-gomes.vercel.app/" target="_blank" onclick="fbq('track', 'Purchase', {value: 5.00, currency: 'BRL'});">Acessar conteúdos</a>
   </div>
 
 </body>
